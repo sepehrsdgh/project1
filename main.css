@@ -127,14 +127,38 @@ input{
 
 
 
-.slide1,.slide2,.slide3,.slide4{
+.slide1,.slide2,.slide3,.slide4 {
     display: none;
+    padding: 25px 25px;
+    margin-top: 50px;
+    
+
 }
 
+.active2{
+    display: block !important;
+    
+}
 
-.active{
+.mid-automataic-slider p{
+   font-size:0.8em ;
+   color: white;
+}
+
+.mid-automataic-slider span{
+    font-size:1.0em ;
+    color: rgb(235,187,22);
+    margin-right: 2px;
+ }
+
+ .title{
     display: block;
-}
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 0.85em !important;
+    color: white !important;
+ }
+
 
 
 .alert{
@@ -244,4 +268,9 @@ input{
    
    
    
+}
+
+
+.main-box-left{
+    width: 120%;
 }

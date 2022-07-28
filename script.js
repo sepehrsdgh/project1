@@ -1,8 +1,4 @@
-//varibales//
-
-
-
-
+//captcha-code maker//
 let emptyArray=[]
 let intialCharacter=["1","2","3","4","5","6","7","8","9"]
 
@@ -18,16 +14,19 @@ document.querySelector("#captchacode").innerHTML=captchaCode;
 document.querySelector("#inputvalidationcode").addEventListener("keyup",function(e){
     if(e.keyCode===13){
        if( document.querySelector("#inputvalidationcode").value===captchaCode){
-        //document.location.reload()//
-        document.querySelector(".alert").classList.remove("active")
+        
+        //document.querySelector(".alert").classList.remove("active")
+        document.querySelector("#alert").className="alert"
+        document.location.reload()
        }
        else{
-        document.querySelector(".alert").classList.add("active")
-        document.querySelector(".alert").innerHTML="کد امنیتی اشتباه است.لطفا مجدد وارد نمایید. "
-        let emptyArray=[]
+        document.querySelector("#alert").classList.add("active")
+        document.querySelector("#alert").innerHTML="کد امنیتی اشتباه است.لطفا مجدد وارد نمایید. "
+        captchaCode=""
+        emptyArray=[]
         for(let i=1;i<=5;i++){
             emptyArray.push(intialCharacter[Math.floor(Math.random()*(intialCharacter.length))])
-            let captchaCode=emptyArray.join("")
+             captchaCode=emptyArray.join("")
             
 document.querySelector("#captchacode").innerHTML=captchaCode;
         }
@@ -36,10 +35,10 @@ document.querySelector("#captchacode").innerHTML=captchaCode;
 })
 
 document.querySelector("#refreshBtn").addEventListener("click",function(){
-    let emptyArray=[]
+     emptyArray=[]
     for(let i=1;i<=5;i++){
         emptyArray.push(intialCharacter[Math.floor(Math.random()*(intialCharacter.length))])
-        let captchaCode=emptyArray.join("")
+        captchaCode=emptyArray.join("")
         
 document.querySelector("#captchacode").innerHTML=captchaCode;
 }
@@ -55,10 +54,10 @@ document.querySelector(".bottom-box .right").addEventListener("click",function()
        else{
         document.querySelector(".alert").classList.add("active")
         document.querySelector(".alert").innerHTML="کد امنیتی اشتباه است.لطفا مجدد وارد نمایید. "
-        let emptyArray=[]
+         emptyArray=[]
         for(let i=1;i<=5;i++){
             emptyArray.push(intialCharacter[Math.floor(Math.random()*(intialCharacter.length))])
-            let captchaCode=emptyArray.join("")
+            captchaCode=emptyArray.join("")
             
 document.querySelector("#captchacode").innerHTML=captchaCode;
         }
@@ -67,6 +66,25 @@ document.querySelector("#captchacode").innerHTML=captchaCode;
 })
 
 
+//input//
+//document.getElementsByTagName("input").addEventListener("keyup",function(){
+  //  document.querySelector(".input-group span")
+//})
+
+document.querySelector("#ali").addEventListener("keyup",function(e){
+    document.querySelector("#ali span").innerHTML=""
+})
+
+//document.querySelector("#ali").addEventListener("keyup",function(e){
+   // if(Input.value===""){
+       // document.querySelector("#ali span").innerHTML="نام کاربری"
+   // }
+//})
+
+
+if(document.querySelector("#hasan").value===""){
+    document.querySelector("#ali span").innerHTML="نام کاربری"
+}
 
 
 
