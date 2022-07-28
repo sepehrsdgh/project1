@@ -7,9 +7,12 @@ for(let i=1;i<=5;i++){
 }
 
 let captchaCode=emptyArray.join("")
-
+let c=Math.random()*20
 
 document.querySelector("#captchacode").innerHTML=captchaCode;
+document.getElementById("captchacode").style.letterSpacing =`${c}px`
+
+
 
 document.querySelector("#inputvalidationcode").addEventListener("keyup",function(e){
     if(e.keyCode===13){
@@ -18,6 +21,7 @@ document.querySelector("#inputvalidationcode").addEventListener("keyup",function
         //document.querySelector(".alert").classList.remove("active")
         document.querySelector("#alert").className="alert"
         document.location.reload()
+        document.getElementById("captchacode").style.letterSpacing =`${c}px`
        }
        else{
         document.querySelector("#alert").classList.add("active")
@@ -29,6 +33,8 @@ document.querySelector("#inputvalidationcode").addEventListener("keyup",function
              captchaCode=emptyArray.join("")
             
 document.querySelector("#captchacode").innerHTML=captchaCode;
+c=Math.random()*20
+document.getElementById("captchacode").style.letterSpacing =`${c}px`
         }
        }    
     }
@@ -41,6 +47,9 @@ document.querySelector("#refreshBtn").addEventListener("click",function(){
         captchaCode=emptyArray.join("")
         
 document.querySelector("#captchacode").innerHTML=captchaCode;
+c=Math.random()*20
+document.getElementById("captchacode").style.letterSpacing =`${c}px`
+
 }
 })
 
@@ -60,6 +69,8 @@ document.querySelector(".bottom-box .right").addEventListener("click",function()
             captchaCode=emptyArray.join("")
             
 document.querySelector("#captchacode").innerHTML=captchaCode;
+c=Math.random()*20
+document.getElementById("captchacode").style.letterSpacing =`${c}px`
         }
        }    
 
@@ -85,6 +96,10 @@ document.querySelector("#ali").addEventListener("keyup",function(e){
 if(document.querySelector("#hasan").value===""){
     document.querySelector("#ali span").innerHTML="نام کاربری"
 }
+
+
+
+
 
 
 

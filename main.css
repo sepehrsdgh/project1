@@ -100,7 +100,7 @@ input{
 
 .input-group a{
     position: absolute;
-    left: 9%;
+    left: 11%;
     top:32%;
     color:rgb(181,186,190);
     
@@ -109,7 +109,7 @@ input{
 
  .input-group i{
     position: absolute;
-    left: 3%;
+    left: 5%;
     top: 32%;
     color:rgb(181,186,190);
     font-size: 1.2em;
@@ -128,7 +128,7 @@ input{
 
 
 .slide1,.slide2,.slide3,.slide4 {
-    display: none;
+    display: none !important;
     padding: 25px 25px;
     margin-top: 50px;
     
@@ -145,7 +145,7 @@ input{
    color: white;
 }
 
-.mid-automataic-slider span{
+.slide2 span{
     font-size:1.0em ;
     color: rgb(235,187,22);
     margin-right: 2px;
@@ -273,4 +273,152 @@ input{
 
 .main-box-left{
     width: 120%;
+}
+
+
+.slide2 i{
+    font-size:0.8em;
+}
+
+
+.slide1{
+    font-size: 1em;
+    display: flex ;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+.span1,.span2 {
+    color:white;
+    font-size: 0.75em;
+}
+
+.span1{
+    margin-bottom: 2.5px;
+}
+
+.slide1 i{
+    background-color: white;
+    padding: 4px 4px;
+    border-radius: 2.5px;
+}
+
+
+
+.slide3 span{
+    color: rgb(235,187,22);
+    font-size: 1em;
+}
+
+
+.slide3 i{
+    font-size: 0.8em;
+}
+
+.slide3{
+    text-align: center;
+}
+
+.slide4 a{
+    color: rgb(235,187,22);
+    font-size: 1.0em;
+    cursor: pointer;
+}
+
+.slide4 a:hover{
+    color:rgb(255,187,150);
+    
+}
+
+
+.slide4 i{
+    font-size: 0.8em;
+}
+
+.slide4{
+    text-align: center;
+    font-size: 0.9em;
+    transform-origin: center;
+    
+}
+
+
+.slide4 .title{
+    font-size: 1.0em !important;
+}
+
+.main-box-left-bottom{
+    margin-top: 50%;
+}
+
+
+.main-box-left-bottom a img{
+    width: 55%;
+    opacity: 50%;
+}
+
+.main-box-left-bottom a img:hover{
+    opacity: 100%;
+}
+ 
+.icon-etemad{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.main-box-left-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.bootom {
+    padding: 25px;
+    padding-top: 0px;
+    
+    
+}
+
+
+.bootom p,.bootom span{
+    font-size: 0.7em;
+    color:white;
+    text-align: center;
+    
+}
+
+.bootom a{
+    font-size: 0.95em;
+    color:white;
+    text-decoration: underline;
+    opacity: 50%;
+    
+}
+
+.bootom a:hover{
+    opacity: 100%;
+    
+}
+
+.bootom span{
+    padding-right: 5%;
+    
+    
+}
+
+#finaltext{
+    padding-right: 42%;
+    margin-top: 2%;
+}
+
+
+
+#captchacode{
+    background-image: url(./texture/1.webp);
+    padding-top: 3%;
+    box-sizing: border-box;
+    letter-spacing: 7px;
 }
