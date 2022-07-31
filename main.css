@@ -128,7 +128,6 @@ input{
 
 
 .slide1,.slide2,.slide3,.slide4 {
-    display: none !important;
     padding: 25px 25px;
     margin-top: 50px;
     
@@ -422,3 +421,20 @@ input{
     box-sizing: border-box;
     letter-spacing: 7px;
 }
+
+.owl-stage-outer{
+    direction:ltr;
+}
+
+/*.mid-automataic-slider{
+    max-width:400px;
+}*/
+/*imprtant*/
+.main-box-left{
+    max-width:330px;
+}
+
+
+/*responsive hast ajibie*/
+/*vaghti bozorg mikoni yek safheye sefid baz mishe moshakhas nist cheye*/
+/*dastkari margin*/
