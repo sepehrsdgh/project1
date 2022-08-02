@@ -124,14 +124,20 @@ setInterval(() => {
 },1 );
 
 
-
+document.querySelector("#keyboard1").addEventListener("click",function(){
+    window.open("https://pooya.um.ac.ir/shares/keyboard.php", '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes')
+})
 
     
+document.querySelector("#keyboard2").addEventListener("click",function(){
+    window.open("https://pooya.um.ac.ir/shares/keyboard.php", '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes')
+})
 
 
 
-
-
+document.querySelector("#keyboard3").addEventListener("click",function(){
+    window.open("https://pooya.um.ac.ir/shares/keyboard.php", '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes')
+})
 
 
 
