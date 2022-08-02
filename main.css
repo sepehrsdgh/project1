@@ -13,6 +13,11 @@
     margin: 0px;
     font-family: iran;
     font-size: 16px;
+    
+}
+
+body{
+    background-color:rgb(241,241,241);
 }
 
 a{
@@ -30,17 +35,21 @@ main{
 .main-box{
     display: grid;
     grid-template-columns: 1.8fr 1fr;
-    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+    width:790px;
+    
 }
 
 
 .main-box-right{
     background-color:rgb(248,249,250) ;
     padding: 25px 30px;
+    
 }
 
 .main-box-left{
     background-color:rgb(22,122,188) ;
+    
 }
 
 .universitylogo {
@@ -54,11 +63,12 @@ main{
     text-align: center;
 }
 
-.span1{
+.main-box-right .span1{
    display: block;
    text-align: center;
-   font-size: 1.2em;
+   font-size: 1.1em!important;
    margin: 10px 0px;
+   color: black!important;
 }
 
 
@@ -155,7 +165,7 @@ input{
     text-align: center;
     margin-bottom: 8px;
     font-size: 0.85em !important;
-    color: white !important;
+    color:white !important;
  }
 
 
@@ -347,7 +357,7 @@ input{
 }
 
 .main-box-left-bottom{
-    margin-top: 50%;
+    margin-top: 25%;
 }
 
 
@@ -422,19 +432,28 @@ input{
     letter-spacing: 7px;
 }
 
-.owl-stage-outer{
-    direction:ltr;
+
+
+.mid-automataic-slide{
+    width: 100%;
+
 }
 
-/*.mid-automataic-slider{
-    max-width:400px;
-}*/
-/*imprtant*/
 .main-box-left{
     max-width:330px;
 }
 
 
-/*responsive hast ajibie*/
-/*vaghti bozorg mikoni yek safheye sefid baz mishe moshakhas nist cheye*/
-/*dastkari margin*/
+.owl-carousel .nav-btn{
+   width: 80px;
+}
+
+.owl-theme .owl-dots .owl-dot span{
+    margin-right:3px!important;
+    margin-left: 3px!important;
+}
+
+
+input[type=text]:focus {
+    
+  }

@@ -1,4 +1,7 @@
 //captcha-code maker//
+for(let i=0;i<=2;i++){
+document.getElementsByTagName("input")[i].value=""
+}
 let emptyArray=[]
 let intialCharacter=["1","2","3","4","5","6","7","8","9"]
 
@@ -82,20 +85,51 @@ document.getElementById("captchacode").style.letterSpacing =`${c}px`
   //  document.querySelector(".input-group span")
 //})
 
-document.querySelector("#ali").addEventListener("keyup",function(e){
-    document.querySelector("#ali span").innerHTML=""
-})
-
-//document.querySelector("#ali").addEventListener("keyup",function(e){
-   // if(Input.value===""){
-       // document.querySelector("#ali span").innerHTML="نام کاربری"
-   // }
-//})
+//document.querySelector("#ali").addEventListener("keyup", function() {
+    //document.querySelector("#ali span").style.display = "none";//
+   // if(document.querySelector("#hasan").value===""){//
+       // document.querySelector("#ali span").style.display = "block";//
+       // document.querySelector("#ali span").innerHTML="نام کاربری" //
+ //   }
+   // });
 
 
-if(document.querySelector("#hasan").value===""){
-    document.querySelector("#ali span").innerHTML="نام کاربری"
+function remove(){
+   if(document.querySelector("#hasan").value===""){
+        document.querySelector("#ali span").style.display = "block";
+        document.querySelector("#ali span").innerHTML="نام کاربری" 
+    }
+    else{
+        document.querySelector("#ali span").style.display = "none";
+    }
+    if(document.querySelector("#reza").value===""){
+        document.querySelector("#mahmod span").style.display = "block";
+        document.querySelector("#mahmod span").innerHTML="رمز ورود"  
+    }
+    else{
+        document.querySelector("#mahmod span").style.display = "none";
+    }
+    if(document.querySelector("#inputvalidationcode").value===""){
+        document.querySelector("#mehdi span").style.display = "block";
+        document.querySelector("#mehdi span").innerHTML="کد امنیتی"  
+    }
+    else{
+        document.querySelector("#mehdi span").style.display = "none";
+    }
 }
+
+
+setInterval(() => {
+    remove()
+},1 );
+
+
+
+
+    
+
+
+
 
 
 
